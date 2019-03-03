@@ -143,7 +143,7 @@ var start = document.getElementById('start');
 
 start.onclick = function() {
   window.location.replace(
-    './Irish/src/Irish.html'
+    './Irish/src/irish.html'
   );
 };
 
