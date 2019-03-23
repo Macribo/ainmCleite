@@ -426,7 +426,10 @@ $(document).ready(function() {
         console.log('and then...');
         goToSlide(32);
         $('#about').css({'display':'none'});
-    $('#btn-menu').fadeTo('slow',1);
+        $('#start').fadeTo('slow',1);
+        $('#skip').fadeTo('slow',0);
+        $('#btn-menu').fadeTo('slow',1);
+
 
 
         break;
