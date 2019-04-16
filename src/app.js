@@ -241,6 +241,7 @@ function goToSlide(number) {
 }
 
 $(document).ready(function() {
+    var rain = document.getElementById('rain');
     var amergin = document.getElementById('amergin');
     slideEvent = () => {
         switch (slideNumber) {
@@ -387,10 +388,10 @@ $(document).ready(function() {
         console.log('and then...');
         // wait = 1000;
         goToSlide(24);
-
+        
         break;
-
-      case 25:
+        
+        case 25:
         console.log('and then...');
         // wait = 4000;
         goToSlide(25);
@@ -412,6 +413,8 @@ $(document).ready(function() {
 
         break;
       case 29:
+      rain.play();
+
         console.log('and then...');
         goToSlide(29);
         $('#demo').fadeTo('slow', 1);
