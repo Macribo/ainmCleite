@@ -173,9 +173,11 @@ start.onclick = function() {
 };
 
 skip.onclick= function(){
-window.location.replace(
-    './Untitled/index.html'
-    );
+// window.location.replace(
+//     './Untitled/index.html'
+//     );
+ slideNumber++;
+goToSlide(slideNumber);
 }
 
 
@@ -255,7 +257,7 @@ $(document).ready(function() {
         break;
       case 2:
         console.log('Fadó Fadó in Éireann');
-        wait = 6500;
+        wait = 7500;
         goToSlide(2);
         break;
 
@@ -297,7 +299,7 @@ $(document).ready(function() {
         goToSlide(9);
         console.log('music playing');
         setTimeout(function() {
-          wait = 3000;
+          wait = 6000;
         }, 3000);
 
         break;
@@ -320,7 +322,7 @@ $(document).ready(function() {
         console.log('according to legends');
         goToSlide(12);
 
-        wait = 3000;
+        wait = 5000;
         break;
 
       case 13:
@@ -452,7 +454,7 @@ $(document).ready(function() {
   changeSlide = () => {
     setTimeout(changeSlide, wait);
     slideEvent();
-    slideNumber++;
+    // slideNumber++;
      };
   changeSlide();
 
