@@ -173,9 +173,13 @@ start.onclick = function() {
 };
 
 skip.onclick= function(){
-// window.location.replace(
-//     './Untitled/index.html'
-//     );
+if(slideNumber>=31){
+    $('#about').css({'display':'none'});
+    $('#start').fadeTo('slow',1);
+    $('#skip').fadeTo('slow',0);
+    $('#btn-menu').fadeTo('slow',1);
+
+}
  slideNumber++;
 goToSlide(slideNumber);
 }
@@ -484,7 +488,7 @@ $('#btn-panel').animate({left:'35%'});
         $('#about').fadeOut();
         $('#start').fadeOut();
         setTimeout(function(){
-            $('#skip').fadeTo('slow', 0.2);
+            $('#skip').fadeTo('slow', 0.4);
             $('#skip').css('pointer-events', 'auto');
         },500);
     },1000)
